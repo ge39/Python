@@ -4,3 +4,11 @@
     No final, mostre a lista ordenada na tela.
 
 '''
+num = 0
+valor = []
+
+for c in range(1, 6):
+   num = int(input(f'Digite o {c}º numero:'))
+   valor.append(num)
+
+print(f'Lista ordenada {valor}')
