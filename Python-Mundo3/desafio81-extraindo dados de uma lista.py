@@ -15,12 +15,13 @@ while True:
     resp = str(input("Deseja continuar [S/N]:"))
     if resp in 'Nn':
         break
-
 #Quantos numeros foram digitados
-print(len(lista))
+print(f'Voce digitou {len(lista)} elementos')
 #A lista de valores ordenados de forma decrescente
-print(lista.sort(reverse=True))
+lista.sort(reverse=True)
+print(f'Os valores digitados em ordem decrescente sao {lista}')
 
+#Se o valor 5 foi digitado e se está ou não na lista
 if 5 in lista:
     print('O numero cinco faz parte da lista')
 else:
