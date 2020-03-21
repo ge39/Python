@@ -4,11 +4,25 @@
     e os valores impares digitados, respectivamente.
     Ao final mostre o conteudo das 3 listas geradas
 '''
-valores =[]
+valores = []
+par = []
+impar = []
 while True:
-    valores.append (int(input('Digite um numero :')))
+    num = (int(input('Digite um numero :')))
+
     resp = str(input('Deseja continuar[S/N] '))
+    valores.append(num)
     if resp in 'nN':
         break
+    else:
+        if num % 2 == 0:
+           par.append(num)
+        else:
+            impar.append(num)
 print(valores)
+print(f'Todos os valores pares {par}')
+print(f'Todos os valores impares {impar}')
+
+
+
 
