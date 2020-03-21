@@ -9,16 +9,16 @@ par = []
 impar = []
 while True:
     num = (int(input('Digite um numero :')))
-
-    resp = str(input('Deseja continuar[S/N] '))
     valores.append(num)
-    if resp in 'nN':
-        break
-    else:
+    resp = str(input('Deseja continuar[S/N] '))
+
+    if resp in 'sS':
         if num % 2 == 0:
-           par.append(num)
+            par.append(num)
         else:
             impar.append(num)
+    else:
+        break
 print(valores)
 print(f'Todos os valores pares {par}')
 print(f'Todos os valores impares {impar}')
