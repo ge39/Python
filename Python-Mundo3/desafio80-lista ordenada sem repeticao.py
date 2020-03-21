@@ -13,7 +13,7 @@ for c in range(0, 5):
        lista.append(n)
        print('Adicionado ao final da lista')
     else:
-       #se nao for o primeiro numero e nem o ultimo, o numero será inserido no meio
+       #se nao for o primeiro numero e nem o ultimo, o numero será inserido no meio do array
       pos = 0  # posiçao zero do array
       while pos < len(lista):
          #se o numero digitado for menor ou igual que o numero da lista , determine a posição a inserir na lista
