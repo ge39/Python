@@ -8,20 +8,19 @@ valores = []
 par = []
 impar = []
 while True:
-    num = (int(input('Digite um numero :')))
-    valores.append(num)
+    valores.append((int(input('Digite um numero :'))))
     resp = str(input('Deseja continuar[S/N] '))
 
-    if resp in 'sS':
+    if resp in 'nN':
         if num % 2 == 0:
             par.append(num)
         else:
             impar.append(num)
     else:
         break
-print(valores)
-print(f'Todos os valores pares {par}')
-print(f'Todos os valores impares {impar}')
+print(valores)git
+print(f'Lista de numeros pares {par}')
+print(f'Lista de numeros impares {impar}')
 
 
 
