@@ -12,13 +12,13 @@ while True:
     resp = str(input('Deseja continuar[S/N] '))
 
     if resp in 'nN':
-        if num % 2 == 0:
-            par.append(num)
+        if valores % 2 == 0:
+            par.append(valores)
         else:
-            impar.append(num)
+            impar.append(valores)
     else:
         break
-print(valores)git
+print(valores)
 print(f'Lista de numeros pares {par}')
 print(f'Lista de numeros impares {impar}')
 
