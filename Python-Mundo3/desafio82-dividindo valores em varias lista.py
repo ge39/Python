@@ -8,15 +8,15 @@ valores = []
 par = []
 impar = []
 while True:
-    valores.append((int(input('Digite um numero :'))))
+    num = int(input('Digite um numero :'))
     resp = str(input('Deseja continuar[S/N] '))
+    valores.append(num)
 
-    if resp in 'nN':
-        if valores % 2 == 0:
-            par.append(valores)
-        else:
-            impar.append(valores)
+    if num % 2 == 0:
+        par.append(num)
     else:
+        impar.append(num)
+    if resp in 'nN':
         break
 print(valores)
 print(f'Lista de numeros pares {par}')
